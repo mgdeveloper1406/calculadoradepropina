@@ -1,0 +1,83 @@
+	body {
+		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+		margin:0;
+	}
+	.container {
+		font-family: Book Antiqua;
+
+		width: 28%;
+		height: 70vh;
+		margin-top: 5%;
+		background-color: #fff;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 8%;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	h3 {
+		background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+		font-size: 25px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		border-top-right-radius: 30px;
+		border-top-left-radius: 30px; 
+		color: white;
+		text-align: center;
+	}
+	#servicio, #prop, #personas {
+		font-size: 20px;
+		width: 250px;
+
+	}
+	button {
+		width: 115px;
+		height: 35px;
+		margin-top: 25px;
+		background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+		color: white;
+		border-radius: 5px;
+		font-size: 20px;
+	}
+
+	button:hover {
+		border: 1px solid red;
+		background-color: red;
+
+	}
+
+	button:active {
+		position:relative;
+		top:1px;
+		border-radius: 5px;
+}
+
+	#calcular {
+		float: 	right;
+		margin-right: 	15px;
+	}
+	#limpiar {
+		float: 	left;
+		margin-left: 15px;
+	}
+	#resultado {
+		margin: 5px;
+		font-size: 30px;
+		font-weight: 600;
+		height: 35px;	
+	}
+
+	#otroValor {
+		
+		height: 25px;
+		width: 250px;	
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+
+	}
+
+	.vacio {
+		border: 2px solid red;
+	}

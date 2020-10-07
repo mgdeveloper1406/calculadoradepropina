@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de propinas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+	<h3>CALCULADORA DE PROPINAS</h3>
+	<div>
+		<p>¿De cuánto fue la cuenta?</p>
+		<input type="number" min="1" placeholder="$ Ingresar monto" name="prop" id="prop">
+		<p>¿Cuántas personas comieron?</p>
+		<input type="number" name="personas" min="1" id="personas" placeholder="Número de personas">
+		<p>¿Cómo fue el servicio?</p>
+		<select id="servicio" onchange="otros(this.value)">
+			<option selected="true" id="0" disabled="true">Seleccioná una opción</option>
+			<option id="25">25% - Excelente</option>
+			<option id="20">20% - Muy bueno</option>
+			<option id="15">15% - Bueno</option>
+			<option id="7">7%   - Regular</option>
+			<option id="3">3%   - Malo</option>
+			<option id="1">1%   - Lo peor</option>
+			<option id="0">Otro</option>
+		</select>
+			<div id="otroValor">
+					<input hidden="true" type="number" min="1" id="personalizado" name="personalizado">
+			</div>
+		<div id="resultado"></div>
+		<div>
+			<button id="limpiar" onclick="limpiar()">Limpiar</button><button id="calcular" onclick="calcular()">Calcular</button>
+		</div>
+		
+	</div>
+
+<script type="text/javascript" src="js/propinas.js"></script>
+</div>
+</body>
+</html>
